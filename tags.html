@@ -1,13 +1,270 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>TAGS - HTML</title>
-</head>
-<body>
-    <!-- Corpo -->
-   <h1>Aprendendo HTML5</h1>
+<html>
+  <head>
+    <title>Tags HTML</title>
+    <meta charset="utf-8">
+  </head>
 
-   <textarea name="my_text" id="" cols="30" rows="10"></textarea>
-</body>
+  <body>
+    <div>
+      <label>O conteudo fica aqui!!</label>
+
+      <br>
+
+      <b>Test bold</b>
+
+      <br>
+
+      <i>Lorem ipsum</i>
+
+      <br>
+
+      <b>
+        <i>
+          Teste negrito e itálico
+        </i>
+      </b>
+
+      <br>
+      <br>
+      <br>
+    </div>
+
+    <hr>
+
+    <div>
+      <h1>This is heading 1</h1>
+      <h2>This is heading 2</h2>
+      <h3>This is heading 3</h3>
+      <h4>This is heading 4</h4>
+      <h5>This is heading 5</h5>
+      <h6>This is heading 6</h6>
+
+      <a 
+        href="https://www.w3schools.com"
+        target="_blank">
+        Clique aqui!
+      </a>
+    </div>
+
+    <hr>
+
+    <!-- Listagens -->
+
+    <div>
+      O que é que eu gosto de tomar ao pequeno almoço: 
+      <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>
+
+      <br>
+
+      <ul>
+        <li>
+          <span>Beverages</span>
+          <ul class="nested">
+            <li>Water</li>
+            <li>Coffee</li>
+            <li><span class="caret">Tea</span>
+              <ul class="nested">
+                <li>Black Tea</li>
+                <li>White Tea</li>
+                <li><span class="caret">Green Tea</span>
+                    <ul class="nested">
+                      <li>Sencha</li>
+                      <li>Gyokuro</li>
+                      <li>Matcha</li>
+                      <li>Pi Lo Chun</li>
+                    </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Buttons -->
+
+    <div>
+      <button
+        disabled
+        type="button"
+        onclick="console.log('Olá');">
+        Olá
+      </button>
+
+      <button
+        type="button"
+        onclick="console.log('Adeus');">
+        Adeus
+      </button>
+    </div>
+
+    <!-- Images -->
+
+    <div>
+      <img
+        src="https://academy.itgest.pt/wp-content/uploads/2021/03/itgest-academy-logo.svg" 
+        width="350" 
+        height="350">
+    </div>
+
+    <hr>
+    
+    <!-- Forms -->
+
+    <label
+      for="name">
+      Nome: 
+    </label>
+
+    <input
+      type="text" 
+      id="fname" 
+      name="fname">
+
+    <label
+      for="name">
+      Idade: 
+    </label>
+
+    <input
+      type="number"
+      id="fname" 
+      name="fname">
+
+    <br>
+
+    <label
+      for="password">
+      Password: 
+    </label>
+
+    <input
+      type="password"
+      id="password" 
+      name="password">
+
+    <label
+      for="password-confirmation">
+      Confirmação da Password: 
+    </label>
+
+    <input
+      type="password"
+      id="password-confirmation" 
+      name="password-confirmation">
+
+    <hr>
+
+    <input
+      type="checkbox" 
+      id="vehicle1" 
+      name="vehicle1">
+
+    <label 
+      for="vehicle1"> 
+      I have a bike
+    </label>
+
+    <br>
+
+    <input 
+      type="checkbox" 
+      id="vehicle2" 
+      name="vehicle2"
+      checked>
+
+    <label 
+      for="vehicle2">
+      I have a car
+    </label>
+
+    <br>
+
+    <input 
+      type="checkbox" 
+      id="vehicle3" 
+      name="vehicle3"
+      checked>
+
+    <label 
+      for="vehicle3">
+      I have a boat
+    </label>
+
+    <hr>
+
+    <br><br>
+
+    <input 
+      type="radio" 
+      id="male" 
+      name="gender">
+
+    <label for="male">
+      Male
+    </label>
+    
+    <br>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label>
+
+    <hr>
+
+    <label 
+      for="birthday">
+      Birthday:
+    </label>
+
+    <input
+      type="date" 
+      id="birthday" 
+      name="birthday"
+      min="2021-05-10"
+      max="2021-05-17">
+
+
+      
+    <label for="appt">Select a time:</label>
+    <input type="time" id="appt" name="appt">
+
+
+    <hr>
+
+    <label for="favcolor">Select your favorite color:</label>
+    <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+
+    <hr>
+
+    <label for="cars">Choose a car:</label>
+
+    <select id="cars" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+    </select>
+
+    <hr>
+
+    <label for="w3review">Review of W3Schools:</label>
+
+    <textarea 
+      id="w3review" 
+      name="w3review" 
+      rows="100" 
+      cols="200">
+      At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+    </textarea>
+  </body>
+
+  <footer>
+  </footer>
 </html>
