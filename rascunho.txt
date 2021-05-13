@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link type="tex/css" src=""> -->
+    <title>Formulário</title>
+
+    <style>
+        body {
+            background-image: url("http://lp.startse.com.br/wp-content/uploads/2018/06/ximg-background-a-nova-economia.jpg.pagespeed.ic.uyhQofHanR.webp");
+            background-repeat: no-repeat;
+            /* background-size: 100%; */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            justify-content: center;
+        }
+        
+        .div-principal {
+            width: 50%;
+            background-color: rgb(255, 255, 255);
+            margin: 0 auto;
+            padding-bottom: 10px;
+            box-shadow: 3px 3px 3px rgb(25, 147, 184);
+        }
+        
+        .div-principal {
+            border-radius: 17px;
+        }
+        
+        #titulo {
+            padding-top: 10px;
+            text-align: center;
+            font-size: 30px;
+            text-align: center;
+            color: mediumseagreen;
+        }
+        
+        form {
+            margin: 0px 0px 0px 18px;
+        }
+        
+        label,
+        select {
+            position: relative;
+            margin-bottom: 12px;
+            font-size: 19px;
+            width: 170px;
+        }
+        
+        form label {
+            position: relative;
+            margin-right: 5px;
+            display: block;
+            font-size: 1em;
+        }
+        
+        input {
+            font-size: 1em;
+        }
+        
+        div input[type="checkbox"] {
+            padding: 1em;
+            border: 1px solid #fff;
+            box-shadow: 2px 2px 2px rgb(25, 147, 184);
+            display: block;
+        }
+        
+        .grup-checkbox {
+            position: relative;
+            /* margin: 0px 0px 0px 0px; */
+            margin-left: 400px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="div-principal">
+        <h3 id="titulo">INSCREVA-TE</h3>
+        <form>
+            <label for="candidatura">A cademia a que se está a candidatar *</label>
+            <select>
+                <option selected>---</option>
+                <option value="0">SAP HCM Sucess Factors (17 de Maio 2021)</option>
+                <option value="1">Software development (Inscrições fechadas)</option>
+                <option value="2">Business Inteligence & Analitics (1 de Maio 2021)</option>
+            </select>
+
+            <div>
+                <div>
+                    <label for="nome">Nome e Apelido *</label>
+                    <input type="text" placeholder="Nome e Apelido">
+                </div>
+
+                <div>
+                    <label for="Endereco_de_Email">Endereço de e-mail</label>
+                    <input type="email" placeholder="Endereço de e-mail">
+                </div>
+
+                <div>
+                    <label for="Data_de_nascimento">Data de Nascimento</label>
+                    <input type="date" placeholder="Data de Nascimento">
+                </div>
+
+                <div>
+                    <div class="grup-checkbox">
+                        <div>
+                            <label for="checkbox_habilitacoes">Habilitações literárias*</label>
+                            <input type="checkbox" name="a" value="op1"> Ensino Secundário
+                            <input type="checkbox" name="b" value="op2" checked> Licenciatura
+                            <input type="checkbox" name="c" value="op4"> Mestrado
+                            <input type="checkbox" name="d" value="op5"> Doutoramento
+                            <input type="checkbox" name="e" value="op6"> Outro
+                        </div>
+                        <div>
+                            <label for="checkbox_area_de_formacao">Área de formação*</label>
+                            <input type="checkbox" name="e" value="op7"> A
+                            <input type="checkbox" name="f" value="op8"> B
+                            <input type="checkbox" name="g" value="op9"> C
+                            <input type="checkbox" name="h" value="op10" checked> D
+                            <input type="checkbox" name="i" value="op11"> outro
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="data_de_nascimento">Ano de conclusão*</label>
+                        <input type="date" min="2015-07-16" max="2015-07-20" placeholder="Ano de conclusão">
+                    </div>
+
+                    <div>
+                        <label for="motivo_da_candidatura">Motivo da candidatura *</label>
+                        <input type="text" placeholder="Motivo da candidatura">
+                    </div>
+
+                    <div>
+                        <label for="hl">Como obteve conhecimento da nossa cademia ? *</label>
+                        <input type="checkbox" name="j" value="op12"> J
+                        <input type="checkbox" name="k" value="op12"> K
+                        <input type="checkbox" name="l" value="op14"> L
+                        <input type="checkbox" name="m" value="op15" checked> M
+                        <input type="checkbox" name="n" value="op15"> outro
+                    </div>
+                    <div>
+                        <label for="CV">Upload CV *</label> <br>
+                        <input type="file" placeholder="Não foi escolhido nenhum ficheiro">
+                    </div>
+
+                    <div>
+                        <label for="certificado">Upload Certificado de Habilitações *</label>
+                        <input type="file" placeholder="Não foi escolhido nenhum ficheiro">
+                    </div>
+
+                    <div>
+                        <textarea name="area_de_texto" cols="74" rows="10" placeholder="Deixa-nos aqui as tuas dúvidas / pedidos de esclarecimento"></textarea>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="sms">Dou o meu concentimento á ITGest para tratar dos meus dados pessoais tal descrito na <a href="http://itgest-academ">Politica de Privacidade</a>
+                    </div>
+                    <div>
+                        <button type="button" class="btn">Submeter</button>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <hr>
+
+</body>
+<footer>
+
+</footer>
+
+</html>
+
+</html>
